@@ -1,31 +1,31 @@
 [
   {
-    "instrument": "synthetic-marimba-high",
-    "instrumentName": "Synthetic Marimba",
+    "instrument": "choir-high",
+    "instrumentName": "Choir High",
     "gain": 0.8,
     "pan": -0.9
   },
   {
-    "instrument": "gnarly-trance-pluck-high",
-    "instrumentName": "Gnarly Trance Pluck",
+    "instrument": "choir-synth",
+    "instrumentName": "Choir Synth",
     "gain": 0.1,
     "pan": -0.4
   },
   {
-    "instrument": "tight-synth-bass",
-    "instrumentName": "Tight Synth Bass",
+    "instrument": "piano-glass",
+    "instrumentName": "Piano Glass",
     "gain": 0.5,
     "pan": 0
   },
   {
-    "instrument": "glass-string-structures",
-    "instrumentName": "Glass String Structures",
+    "instrument": "piano-high",
+    "instrumentName": "Piano High",
     "gain": 0.5,
     "pan": 0.4
   },
   {
-    "instrument": "delicate-bells",
-    "instrumentName": "Delicate Bells",
+    "instrument": "voice-micah",
+    "instrumentName": "Voice Micah",
     "gain": 0.2,
     "pan": 0.9
   }

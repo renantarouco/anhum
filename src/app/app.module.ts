@@ -40,7 +40,7 @@ require('../fonts/texgyreadventor_bold_macroman/stylesheet.css');
   ],
   exports: [ AppComponent ],
   providers: [
-    {provide: 'bpm', useValue: 220},
+    {provide: 'bpm', useValue: 150},
     AudioPlayerService,
     SamplesService,
     TimeService,

@@ -11,6 +11,14 @@ const SAMPLE_URLS = {
   'tight-synth-bass': require('./soundfonts/tight-synth-bass-velocities-mono.mp3'),
   'glass-string-structures': require('./soundfonts/glass-string-structures-mono.mp3'),
   'delicate-bells': require('./soundfonts/delicate-bells-velocities-mono.mp3'),
+
+  'choir-high': require('./soundfonts/choir-high-velocities.mp3'),
+  'choir-synth': require('./soundfonts/choir-synth-velocities.mp3'),
+  'piano-glass': require('./soundfonts/piano-glass-velocities.mp3'),
+  'piano-high': require('./soundfonts/piano-high-velocities.mp3'),
+  'piano-low': require('./soundfonts/piano-low-velocities.mp3'),
+  'voice-micah': require('./soundfonts/voice-micah-velocities.mp3'),
+
   'convolution': require('./samples/minster1_000_ortf_48k.wav')
 };
 

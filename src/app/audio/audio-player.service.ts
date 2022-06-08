@@ -3,8 +3,6 @@ import { Store } from '@ngrx/store';
 import { Effect, Actions } from '@ngrx/effects';
 
 import { AppState } from '../model/app-state.model';
-import { Player } from '../model/player.model';
-import { PlayerState } from '../model/player-state.model';
 import { PULSE } from '../core/actions';
 import { SamplesService, Sample } from './samples.service';
 
@@ -13,7 +11,7 @@ const PULSE_FREQUENCY = 440 * Math.pow(2, 3/12); // In C
 const PULSE_GAIN = 0.05;
 
 interface ResumableAudioContext extends AudioContext {
-  resume(): void;
+  resume(): Promise<void>;
 }
 
 @Injectable()
@@ -68,6 +66,7 @@ export class AudioPlayerService {
   }
 
   private playPulse(time: number, bpm: number) {
+    /*
     const osc = this.audioCtx.createOscillator();
     const gain = this.audioCtx.createGain();
 
@@ -83,6 +82,7 @@ export class AudioPlayerService {
     gain.gain.setValueAtTime(0, time)
     gain.gain.linearRampToValueAtTime(PULSE_GAIN, time + 0.01);
     gain.gain.linearRampToValueAtTime(0, time + PULSE_DURATION);
+    */
   }
 
   private playPlayers(state: AppState) {
