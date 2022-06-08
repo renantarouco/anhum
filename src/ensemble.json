@@ -6,20 +6,20 @@
     "pan": -0.9
   },
   {
-    "instrument": "choir-synth",
-    "instrumentName": "Choir Synth",
+    "instrument": "piano-high",
+    "instrumentName": "Piano High",
     "gain": 0.1,
     "pan": -0.4
   },
   {
-    "instrument": "piano-glass",
-    "instrumentName": "Piano Glass",
+    "instrument": "piano-low",
+    "instrumentName": "Piano Low",
     "gain": 0.5,
     "pan": 0
   },
   {
-    "instrument": "piano-high",
-    "instrumentName": "Piano High",
+    "instrument": "piano-glass",
+    "instrumentName": "Piano Glass",
     "gain": 0.5,
     "pan": 0.4
   },
