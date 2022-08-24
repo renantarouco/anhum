@@ -13,9 +13,9 @@
   </p>
 </div>
 <button [disabled]="!samplesLoaded"
-        (click)="play.next()">
-  <span *ngIf="samplesLoaded">Play</span>
-  <span *ngIf="!samplesLoaded">Loading...</span>
+        (click)="onPlay()">
+  <span *ngIf="samplesLoaded && !isServerFull">Play</span>
+  <span *ngIf="!samplesLoaded && isServerFull">Loading...</span>
 </button>
 <p>
   Developed by <a href="https://twitter.com/teropa">@teropa</a>.

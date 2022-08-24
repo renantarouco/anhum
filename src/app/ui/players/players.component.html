@@ -1,5 +1,6 @@
 <in-c-player *ngFor="let playerState of playerStates; trackBy: trackPlayerState"
               [playerState]="playerState"
               [playerStats]="playerStats"
+              [index]="index"
               (advance)="advancePlayer.next(playerState.player.instrument)">
 </in-c-player>

@@ -12,6 +12,7 @@ const SAMPLE_URLS = {
   'glass-string-structures': require('./soundfonts/glass-string-structures-mono.mp3'),
   'delicate-bells': require('./soundfonts/delicate-bells-velocities-mono.mp3'),
 
+  'cello': require('./soundfonts/cello-velocities.mp3'),
   'choir-high': require('./soundfonts/choir-high-velocities.mp3'),
   'choir-synth': require('./soundfonts/choir-synth-velocities.mp3'),
   'piano-glass': require('./soundfonts/piano-glass-velocities.mp3'),

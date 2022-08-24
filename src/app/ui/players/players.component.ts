@@ -3,7 +3,7 @@ import {
   EventEmitter,
   Input,
   Output
-} from '@angular/core'
+} from '@angular/core';
 import { List } from 'immutable';
 import { PlayerState } from '../../model/player-state.model';
 import { PlayerStats } from '../../model/player-stats.model';
@@ -17,6 +17,10 @@ export class PlayersComponent {
   @Input() playerStates: List<PlayerState>;
   @Input() playerStats: PlayerStats;
   @Output() advancePlayer = new EventEmitter();
+
+  @Input() index: Number;
+
+  constructor() {}
 
   trackPlayerState(index: number, obj: PlayerState): any {
     return obj.player.instrument;

@@ -16,6 +16,7 @@
 <in-c-players *ngIf="isPlaying"
               [playerStates]="playerStates"
               [playerStats]="stats"
+              [index]="index"
               (advancePlayer)="advancePlayer.next($event)"
               [@playerControlsTransition]="'in'">
 </in-c-players>

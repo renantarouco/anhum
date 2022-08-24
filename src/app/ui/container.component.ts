@@ -40,6 +40,8 @@ export class ContainerComponent {
   @Output() play = new EventEmitter();
   @Output() advancePlayer = new EventEmitter();
 
+  @Input() index: number;
+
   constructor(private domSanitizer: DomSanitizer) {
   }
 
@@ -55,7 +57,6 @@ export class ContainerComponent {
   
 
 }
-
 
 function moveOut(toY: string) {
   return [

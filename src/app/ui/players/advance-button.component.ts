@@ -8,6 +8,7 @@ import {
 } from '@angular/core';
 import { PlayerState, canPlayerAdvance, isPlayerPlayingLast } from '../../model/player-state.model';
 import { PlayerStats } from '../../model/player-stats.model';
+import { PlayerService } from '../../player.service';
 
 @Component({
   selector: 'in-c-advance-button',
@@ -19,6 +20,12 @@ export class AdvanceButtonComponent {
   @Input() playerState: PlayerState;
   @Input() playerStats: PlayerStats;
   @Output() advance = new EventEmitter();
+
+  @Input() index: number
+
+  constructor(
+    private playerService: PlayerService
+  ) {}
 
   @HostListener('document:keypress', ['$event'])
   handleKeyboardEvent(event: KeyboardEvent) {
@@ -37,7 +44,10 @@ export class AdvanceButtonComponent {
   }
 
   canPlayerAdvance() {
-    return canPlayerAdvance(this.playerState, this.playerStats);
+    return canPlayerAdvance(this.playerState, this.playerStats) && this.index == this.playerState.player.index;
   }
 
+  onClick(event: MouseEvent) {
+    this.advance.next()
+  }
 }

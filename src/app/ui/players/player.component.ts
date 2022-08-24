@@ -19,4 +19,6 @@ export class PlayerComponent {
   @Input() playerState: PlayerState;
   @Input() playerStats: PlayerStats;
   @Output() advance = new EventEmitter();
+
+  @Input() index: number;
 }

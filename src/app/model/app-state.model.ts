@@ -1,4 +1,5 @@
 import { List } from 'immutable';
+import { v4 as uuidv4 } from 'uuid';
 
 import { Module } from './module.model';
 import { PlayerState, advancePlayerState, assignScreensaverModuleToPlayer, getPlayerNowPlaying, initPlayerState, updatePlayerPlaylist } from './player-state.model';
@@ -20,6 +21,7 @@ export function areAllFinished(state: AppState) {
 
 export function play(state: AppState): AppState {
   return Object.assign({}, state, {
+    id: uuidv4(),
     playing: true,
     nowPlaying: List<Sound>(),
     players: state.players.map(initPlayerState)
@@ -61,4 +63,3 @@ export function getNowPlaying(state: AppState, time: number, bpm: number) {
     }
   });
 }
-

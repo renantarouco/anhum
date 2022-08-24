@@ -1,8 +1,11 @@
 <div class="progress-controls">
+  <span>{{ playerState.player.index }}</span>
+  <span>{{ playerState.player.instrument }}</span>
   <in-c-progress-circle [progress]="playerState.progress" [hue]="playerState.playlist?.fromModule.hue">
   </in-c-progress-circle>
   <in-c-advance-button [playerState]="playerState"
                         [playerStats]="playerStats"
+                        [index]="index"
                         (advance)="advance.next()">
   </in-c-advance-button>
 </div>

@@ -1,7 +1,7 @@
 [
   {
-    "instrument": "choir-high",
-    "instrumentName": "Choir High",
+    "instrument": "delicate-bells",
+    "instrumentName": "Delicate Bells",
     "gain": 0.8,
     "pan": -0.9
   },
@@ -26,7 +26,7 @@
   {
     "instrument": "voice-micah",
     "instrumentName": "Voice Micah",
-    "gain": 0.2,
+    "gain": 0.5,
     "pan": 0.9
   }
 ]

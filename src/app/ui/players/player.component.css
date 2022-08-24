@@ -5,6 +5,9 @@
   flex: 1;
   position: relative;
 }
+.progress-controls span {
+  color: whitesmoke;
+}
 in-c-progress-circle, in-c-advance-button {
   position: absolute;
   left: 50%;

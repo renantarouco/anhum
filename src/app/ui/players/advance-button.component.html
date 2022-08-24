@@ -1,5 +1,5 @@
 <button md-fab
-        (click)="advance.next()"
+        (click)="onClick()"
         [disabled]="!canPlayerAdvance()"
         [ngSwitch]="getState()">
   <md-icon *ngSwitchCase="'notStarted'" class="md-24" title="Start">play_arrow</md-icon>
