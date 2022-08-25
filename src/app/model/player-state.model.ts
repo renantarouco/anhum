@@ -41,7 +41,7 @@ export function canPlayerAdvance(ps: PlayerState, playerStats: PlayerStats) {
     return playerStats.totalProgress === 100;
   } else {
     // Can only advance if less than 2 modules ahead of everyone
-    const isFarAhead = ps.moduleIndex - playerStats.minModuleIndex >= 2;
+    const isFarAhead = ps.moduleIndex - playerStats.minModuleIndex >= 4;
     return !ps.finished && !isFarAhead;
   }
 }
