@@ -1,14 +1,14 @@
 [
   {
-    "instrument": "delicate-bells",
-    "instrumentName": "Delicate Bells",
+    "instrument": "tight-synth-bass",
+    "instrumentName": "Tight Synth Bass",
     "gain": 0.8,
     "pan": -0.9
   },
   {
     "instrument": "piano-high",
     "instrumentName": "Piano High",
-    "gain": 0.1,
+    "gain": 2.0,
     "pan": -0.4
   },
   {
