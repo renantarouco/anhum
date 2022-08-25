@@ -77,7 +77,7 @@ export class AppComponent implements OnInit {
         this.store.dispatch(setInitialState(res.state))
       }
 
-      this.stateWS = new WebSocket(`wss://go-getting-started.lemonsea-cc6713b3.brazilsouth.azurecontainerapps.io/state-ws?token=${this.token}`);
+      this.stateWS = new WebSocket(`ws://localhost:8081/state-ws?token=${this.token}`);
 
       this.stateWS.onopen = (evt: MessageEvent) => {
         this.store.subscribe(state => {
@@ -103,7 +103,7 @@ export class AppComponent implements OnInit {
 
       });
 
-      this.advanceWS = new WebSocket(`wss://go-getting-started.lemonsea-cc6713b3.brazilsouth.azurecontainerapps.io/advance-ws?token=${this.token}`);
+      this.advanceWS = new WebSocket(`ws://localhost:8081/advance-ws?token=${this.token}`);
 
       this.advanceWS.onopen = (evt: MessageEvent) => {
           this.store.dispatch(play());
@@ -122,6 +122,18 @@ export class AppComponent implements OnInit {
           console.log("ADVANCE ERROR:",  evt);
       }
     });
+
+    this.isPlaying$.subscribe(isPlaying => {
+      console.log('ISPLAYING:', isPlaying);
+      if (!isPlaying) {
+        if (this.stateWS && (this.stateWS.readyState !== WebSocket.CLOSING && this.stateWS.readyState !== WebSocket.CLOSED)) {
+          this.stateWS.close();
+        }
+        if (this.advanceWS && (this.advanceWS.readyState !== WebSocket.CLOSING && this.advanceWS.readyState !== WebSocket.CLOSED)) {
+          this.advanceWS.close();
+        }
+      }
+    })
   }
 
   advancePlayer(instrument: string) {

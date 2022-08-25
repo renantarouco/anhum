@@ -123,7 +123,7 @@
       {"note": "G4", "velocity": "medium", "duration": 0.5},
       {"note": "C5", "velocity": "high", "duration": 0.5},
       {"note": "B4", "velocity": "medium", "duration": 2},
-      {"note": "D4", "velocity": "high", "duration": 1},
+      {"note": "D5", "velocity": "high", "duration": 1},
       {"duration": 1}     
     ]
   },
