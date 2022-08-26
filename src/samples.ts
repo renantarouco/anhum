@@ -10,6 +10,7 @@ const SAMPLE_URLS = {
   'piano-high': require('./soundfonts/piano-high-velocities.mp3'),
   'piano-low': require('./soundfonts/piano-low-velocities.mp3'),
   'piano-glass': require('./soundfonts/piano-glass-velocities.mp3'),
+  'classic-rock-organ': require('./soundfonts/classic-rock-organ-velocities-high.mp3'),
   'voice-micah': require('./soundfonts/voice-micah-velocities.mp3'),
   'convolution': require('./samples/minster1_000_ortf_48k.wav')
 };
