@@ -21,7 +21,7 @@ export class PlayerService {
     ) { }
 
     get initialState(): Observable<InitialResponse> {
-        return this.httpClient.get("http://localhost:8081/initial")
+        return this.httpClient.get("wss://go-getting-started.lemonsea-cc6713b3.brazilsouth.azurecontainerapps.io/initial")
             .take(1)
             .map(res => res.json())
             .map(res => res as InitialResponse);
