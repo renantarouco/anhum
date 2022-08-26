@@ -6,10 +6,10 @@
     "pan": -0.9
   },
   {
-    "instrument": "piano-high",
-    "instrumentName": "Piano High",
-    "gain": 2.0,
-    "pan": -0.4
+    "instrument": "piano-glass",
+    "instrumentName": "Piano Glass",
+    "gain": 0.5,
+    "pan": 0.4
   },
   {
     "instrument": "piano-low",
